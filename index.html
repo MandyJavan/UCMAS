@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radin UCMAS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>UCMAS</h1>
+      <div class="timer">
+        <div class="timerText">
+          <span class="minute" id="minute">08</span>:<span class="second" id="second">00</span>
+        </div>
+        <div class="timerBtn">
+          <button class="start" id="start">Start</button>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+      <div class="examiner">
+        <div class="question" id="question">Ready!</div>
+        <input class="userInput" id="userInput" type="number" placeholder="Type the result..." onfocus=""/>
+        <button class="next" id="nextQ" onclick="nextQuestion()">Next Question</button>
+      </div>
+    </div>
+    <span id="counter">0</span>
+    <script src="script.js"></script>
+  </body>
+</html>
